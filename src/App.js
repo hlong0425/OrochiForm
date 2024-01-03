@@ -87,10 +87,11 @@ export default function PolarisForm() {
             Volumn discount rule
           ********************/}
             <Card sectioned>
-              <Heading children={<div className="mb-3">Volumn discount rule
-                <hr />
-
-              </div>} />
+              <Heading children={
+                <div className="mb-3">
+                  Volumn discount rule
+                </div>} />
+              <hr />
               {fields.map((item, index) => {
                 const discountType = getValues(`volumnDiscountRules.${index}.discountType`);
                 return (
